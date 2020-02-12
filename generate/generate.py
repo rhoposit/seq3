@@ -2,7 +2,7 @@ import os
 
 import torch
 
-from utils import compress_seq3
+from generate.utils import compress_seq3
 from sys_config import BASE_DIR
 
 checkpoint = "seq3"
