@@ -15,6 +15,6 @@ torch.manual_seed(seed)
 if torch.cuda.is_available():
     torch.cuda.manual_seed(seed)
 
-results = compress_seq3_single(checkpoint, src_file, out_file, device, mode="attention")
-for item in results:
-    print(item[0])
+results = compress_seq3_single(checkpoint, src_file, out_file, device, mode="debug")
+#for item in results:
+#    print(item[0])
