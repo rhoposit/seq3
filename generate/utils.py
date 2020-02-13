@@ -107,6 +107,8 @@ def compress_seq3_single(checkpoint, src_file, out_file,
 
                     preds = id2txt(dec1[0].max(-1)[1],
                                    batch_oov_map, trg_lengths.tolist())
+                    for inp in inp_src:
+                        print(inp)
 
                     for sample in preds:
                         f.write(sample + "\n")
