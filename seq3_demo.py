@@ -1,6 +1,6 @@
 import os, sys
 import torch
-from generate.utils import compress_seq3
+from generate.utils import compress_seq3_single
 from sys_config import BASE_DIR
 
 src_file = sys.argv[1]
