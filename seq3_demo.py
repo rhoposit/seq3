@@ -15,4 +15,4 @@ torch.manual_seed(seed)
 if torch.cuda.is_available():
     torch.cuda.manual_seed(seed)
 
-compress_seq3(checkpoint, src_file, out_file, device, mode="results")
+compress_seq3_single(checkpoint, src_file, out_file, device, mode="results")
